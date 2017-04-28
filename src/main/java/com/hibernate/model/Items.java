@@ -60,6 +60,17 @@ public class Items {
 		this.cart = cart;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Items [id=" + id + ", itemId=" + itemId + ", itemTotal="
+				+ itemTotal + ", itemQuantity=" + itemQuantity + "]";
+	}
+
 	
 
+	
+	
 }

@@ -50,4 +50,13 @@ public class Cart {
 		this.total = total;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Cart [id=" + id + ", name=" + name + ", total=" + total + "]";
+	}
+	
+
 }
