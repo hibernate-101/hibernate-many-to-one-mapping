@@ -9,6 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import com.hibernate.model.CartAnnotation;
+
 import com.hibernate.model.ItemsAnnotation;
 import com.hibernate.util.HibernateAnnotationUtil;
 
@@ -22,7 +23,7 @@ public class HibernateAntnManyToOneMappingSelectAll {
 		session = sessionFactory.openSession();
 		System.out.println("Session opened");
 
-		Query query = session.createQuery("From Items ");
+		Query query = session.createQuery("From ItemsAnnotation ");
 
 		List items = query.list();
 		Iterator itr = items.iterator();

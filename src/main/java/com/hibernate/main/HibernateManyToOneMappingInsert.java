@@ -13,15 +13,12 @@ public class HibernateManyToOneMappingInsert {
 		Cart cart = new Cart();
 		cart.setName("My Cart");
 
-		Items item1 = new Items();
-		item1.setItemId("i101");
-		item1.setItemQuantity(2);
-		item1.setItemTotal(2 * 100);
+		Items item1 = new Items("i101",2 * 100,2,cart);
+		
 
-		Items item2 = new Items();
-		item2.setItemId("i102");
-		item2.setItemQuantity(3);
-		item2.setItemTotal(3 * 100);
+		Items item2 = new Items("i102",3*100,3,cart);
+		
+		//cart.setTotal(item1.getItemTotal());
 
 		cart.setTotal(item1.getItemTotal() + item2.getItemTotal());
 		item1.setCart(cart);
